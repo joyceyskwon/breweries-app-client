@@ -4,7 +4,8 @@ import BreweriesContainer from './components/BreweriesContainer'
 
 function App() {
   return (
-    <div className="App">
+    <div>
+      <h1>Brewery App</h1>
       <BreweriesContainer />
     </div>
   );
