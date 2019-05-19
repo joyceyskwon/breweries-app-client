@@ -3,21 +3,21 @@ import BreweryItem from './BreweryItem'
 import adapter from '../services/adapter'
 
 class BreweriesContainer extends Component {
-    state = {
-        breweries: [],
-        breweryClicked: false,
-        clickedBot: null
-    }
+  state = {
+    breweries: [],
+    breweryClicked: false,
+    clickedBot: null
+  }
 
     componentDidMount() {
-        adapter.fetchBreweries()
-        .then(breweries => {
-            if(breweries) {
-                this.setState({ breweries })
-            } else {
-                return this.state.breweries
-            }
-        })
+      adapter.fetchBreweries()
+      .then(breweries => {
+        if(breweries) {
+          this.setState({ breweries })
+        } else {
+          return this.state.breweries
+        }
+      })
     }
 
     findBreweryById = breweryId => this.state.breweries.find(b => b.id === breweryId)
