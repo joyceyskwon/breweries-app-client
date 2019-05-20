@@ -29,8 +29,6 @@ class BreweriesContainer {
     })
   }
 
-
-
   mapBreweries = () => {
     return this.state.breweries.map(brewery => {
       return <BreweryItem
