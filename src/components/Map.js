@@ -3,14 +3,14 @@ import adapter from '../services/adapter'
 import GoogleMapReact from 'google-map-react';
 
 const mapStyle = {
-  width: '300px',
-  height: '400px'
+  width: '100%',
+  height: '100%'
 }
 
 class Map extends Component {
 
   state = {
-    zoom: 11,
+    zoom: 12,
     center: {
       lat: this.props.brewery.latitude ? parseFloat(this.props.brewery.latitude) : 37.7749,
       lng: this.props.brewery.longitude ? parseFloat(this.props.brewery.longitude) : -122.4194
