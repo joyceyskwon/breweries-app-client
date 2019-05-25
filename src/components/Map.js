@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import adapter from '../services/adapter'
-import config from '../config.js'
+import config from '../config'
 import GoogleMapReact from 'google-map-react';
 
 const mapStyle = {
