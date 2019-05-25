@@ -1,7 +1,37 @@
 body {
   margin: 0;
-  padding: 0;
+  padding: 0px;
   font-family: sans-serif;
+}
+
+/* Container */
+.container {
+  padding: 20px;
+  padding-top: 20px;
+  column-count: 2;
+  column-gap: 20px;
+}
+
+/* Modal */
+.ui.modal.transition.visible.active.modal {
+  float: right;
+  transform: translateY(-50%);
+}
+
+/* Map */
+.map {
+  
+}
+
+/* Nav */
+.sticky {
+  font-size: 24pt;
+  z-index: 5;
+  position: sticky;
+  top: 0;
+  color: white;
+  background-color: rgb(255, 113, 30);
+  padding: 20px;
 }
 
 .text-wrap {
