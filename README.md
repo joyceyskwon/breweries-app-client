@@ -1,4 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is deployed here: https://breweries-app-client.herokuapp.com/
+
+Ruby on Rails Backend: https://breweries-app-server.herokuapp.com/api/v1/breweries
+
+This app uses [Google Map React](https://github.com/google-map-react/google-map-react).
 
 ## Available Scripts
 
