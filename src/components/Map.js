@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import config from '../config'
+import adapter from './services/adapter'
 import GoogleMapReact from 'google-map-react';
 
 const mapStyle = {
@@ -31,7 +31,7 @@ class Map extends Component {
       <div className="map">
         <GoogleMapReact
           style={mapStyle}
-          bootstrapURLKeys={{ key: config.API_KEY }}
+          bootstrapURLKeys={{ key: adapter.API_KEY }}
           defaultCenter={this.state.center}
           defaultZoom={this.state.zoom}
           onGoogleApiLoaded={({ map, maps }) => this.renderMarkers(map, maps, parseFloat(this.state.center.lat), parseFloat(this.state.center.lng))}
